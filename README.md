@@ -1,5 +1,16 @@
 # dotfiles
 
+## Prerequisites
+
+stow
+
+.bashrc has this line
+```
+if [ -f ~/.bash_aliases ]; then
+    . ~/.bash_aliases
+fi
+```
+
 ## Setup
 
 ```
