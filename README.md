@@ -21,11 +21,21 @@ fi
 
 ## Setup
 
+### One-time
+
 ```
 cd ~
 git clone https://github.com/lydavid/dotfiles.git
 cd dotfiles
+```
+
+### Each time after pulling
+
+```
+cd ~/dotfiles
 stow .
+source ~/.bashrc
+tmux source ~/.tmux.conf
 ```
 
 `Ctrl + a` + `I` to install all tmux plugins
