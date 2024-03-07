@@ -27,3 +27,5 @@ git clone https://github.com/lydavid/dotfiles.git
 cd dotfiles
 stow .
 ```
+
+`Ctrl + a` + `I` to install all tmux plugins
