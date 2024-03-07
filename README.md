@@ -2,7 +2,15 @@
 
 ## Prerequisites
 
-stow
+stow is installed
+```
+apt install stow
+```
+
+tmux plugin manager is installed
+```
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+```
 
 .bashrc has this line
 ```
