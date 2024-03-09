@@ -1,0 +1,15 @@
+[core]
+	ignorecase = false
+	editor = vi
+	untrackedcache = true
+	fsmonitor = true
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[user]
+	name = David Ly
+	email = 22302001+lydavid@users.noreply.github.com
+[safe]
+	directory = *
