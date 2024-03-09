@@ -8,8 +8,11 @@
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
-[user]
-	name = David Ly
-	email = 22302001+lydavid@users.noreply.github.com
 [safe]
 	directory = *
+[user]
+        name = David Ly
+        email = 22302001+lydavid@users.noreply.github.com
+        signingkey = 3E91D9F48ECE7814
+[commit]
+        gpgsign = true
