@@ -5,4 +5,6 @@ alias gds='git diff --staged'
 alias gla='git log --all'
 alias gco='git checkout'
 alias gaa='git add .'
-alias lah='ls -lah'
+
+alias lah='eza -lah'
+alias ll='lah'
