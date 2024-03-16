@@ -12,12 +12,19 @@ tmux plugin manager is installed
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 ```
 
-.bashrc has this line
+zsh is installed
+
+oh-my-zsh is installed
+https://github.com/ohmyzsh/ohmyzsh?tab=readme-ov-file#manual-inspection
+
+Afterwards, remove .zshrc so that we can stow
+
+Follow the prompts for fzf, installing keybindings, though don't have it append to .zshrc now that I already did it
 ```
-if [ -f ~/.bash_aliases ]; then
-    . ~/.bash_aliases
-fi
+git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+~/.fzf/install
 ```
+
 
 ## Setup
 
@@ -34,7 +41,7 @@ cd dotfiles
 ```
 cd ~/dotfiles
 stow .
-source ~/.bashrc
+source ~/.zshrc
 tmux source ~/.tmux.conf
 ```
 
