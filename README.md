@@ -31,9 +31,7 @@ git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ### One-time
 
 ```
-cd ~
 git clone https://github.com/lydavid/dotfiles.git
-cd dotfiles
 ```
 
 ### Each time after pulling
