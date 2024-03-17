@@ -39,7 +39,7 @@ git clone https://github.com/lydavid/dotfiles.git
 ```
 cd ~/dotfiles
 stow .
-source ~/.zshrc
+exec zsh
 tmux source ~/.tmux.conf
 ```
 
