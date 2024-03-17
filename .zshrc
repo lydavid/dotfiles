@@ -1,6 +1,15 @@
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:/usr/bin:$HOME/.local/bin:$PATH
 
+export PATH=$PATH:$HOME/.maestro/bin
+
+export ANDROID_HOME=$HOME/Android
+export PATH=$PATH:$ANDROID_HOME/cmdline-tools/bin:$PATH
+export PATH=$PATH:$ANDROID_HOME/platform-tools/:$PATH
+export PATH=$PATH:$ANDROID_HOME/emulator/:$PATH
+
+export GPG_TTY=$(tty)
+
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
@@ -108,8 +117,6 @@ source $ZSH/oh-my-zsh.sh
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
-
-export GPG_TTY=$(tty)
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
