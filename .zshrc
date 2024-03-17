@@ -109,7 +109,9 @@ if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
+export GPG_TTY=$(tty)
+
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-export GPG_TTY=$(tty)
+eval "$(zoxide init zsh)"
 
