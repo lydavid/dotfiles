@@ -1,12 +1,15 @@
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:/usr/bin:$HOME/.local/bin:$PATH
 
-export PATH=$PATH:$HOME/.maestro/bin
+# Maestro and Android setup for WSL only
+if [[ -n "$WSL_DISTRO_NAME" ]]; then
+  export PATH=$PATH:$HOME/.maestro/bin
 
-export ANDROID_HOME=$HOME/Android
-export PATH=$PATH:$ANDROID_HOME/cmdline-tools/bin:$PATH
-export PATH=$PATH:$ANDROID_HOME/platform-tools/:$PATH
-export PATH=$PATH:$ANDROID_HOME/emulator/:$PATH
+  export ANDROID_HOME=$HOME/Android
+  export PATH=$PATH:$ANDROID_HOME/cmdline-tools/bin:$PATH
+  export PATH=$PATH:$ANDROID_HOME/platform-tools/:$PATH
+  export PATH=$PATH:$ANDROID_HOME/emulator/:$PATH
+fi
 
 export GPG_TTY=$(tty)
 
