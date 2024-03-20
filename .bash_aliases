@@ -8,3 +8,5 @@ alias gaa='git add .'
 
 alias lah='eza -lah'
 alias ll='lah'
+
+alias cd='z'
