@@ -2,20 +2,18 @@
 
 ## Prerequisites
 
-stow is installed
 ```
 apt install stow
-```
 
-tmux plugin manager is installed
-```
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+
+apt install zsh
+wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh
+sh install.sh
+
+apt install eza
+apt install zoxide
 ```
-
-zsh is installed
-
-oh-my-zsh is installed
-https://github.com/ohmyzsh/ohmyzsh?tab=readme-ov-file#manual-inspection
 
 Afterwards, remove .zshrc so that we can stow
 
