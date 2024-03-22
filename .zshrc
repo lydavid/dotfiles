@@ -1,20 +1,6 @@
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:/usr/bin:$HOME/.local/bin:$PATH
 
-if [[ -n "$WSL_DISTRO_NAME" ]]; then
-
-  # Maestro and Android setup for WSL only
-  export PATH=$PATH:$HOME/.maestro/bin
-
-  export ANDROID_HOME=$HOME/Android
-  export PATH=$PATH:$ANDROID_HOME/cmdline-tools/bin:$PATH
-  export PATH=$PATH:$ANDROID_HOME/platform-tools/:$PATH
-  export PATH=$PATH:$ANDROID_HOME/emulator/:$PATH
-
-  # Makes git much faster in WSL, but we have to push/pull with /usr/bin/git
-  alias git='git.exe'
-fi
-
 export GPG_TTY=$(tty)
 
 # Path to your oh-my-zsh installation.
