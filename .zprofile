@@ -10,3 +10,6 @@ if [[ -n "$WSL_DISTRO_NAME" ]]; then
   export PATH
 fi
 
+if [[ $(uname) == Darwin ]]; then
+  eval "$(/opt/homebrew/bin/brew shellenv)"
+fi
