@@ -2,9 +2,12 @@
 
 ## Prerequisites
 
+Replace apt with appropriate package managers.
+
 ```
 apt install stow
 
+apt install tmux
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 apt install zsh
