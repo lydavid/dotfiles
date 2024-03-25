@@ -24,3 +24,7 @@ if [[ $(uname) == Darwin ]]; then
 fi
 
 export PATH
+
+if [ -f ~/.private_zprofile ]; then
+  source ~/.private_zprofile
+fi
