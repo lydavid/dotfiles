@@ -1,7 +1,6 @@
-if [[ -n "$WSL_DISTRO_NAME" ]]; then
+PATH+=:$HOME/.maestro/bin
 
-  # Maestro and Android setup for WSL only
-  PATH+=:$HOME/.maestro/bin
+if [[ -n "$WSL_DISTRO_NAME" ]]; then
 
   export ANDROID_HOME=$HOME/Android
   PATH+=:$ANDROID_HOME/cmdline-tools/bin
@@ -17,7 +16,7 @@ if [[ $(uname) == Darwin ]]; then
   PATH+=:$ANDROID_HOME/emulator
 
   # Use JDK 17 in case there are multiple JDK installations
-  export JAVA_HOME=$(/usr/libexec/java_home -v 17.0.10)
+  export JAVA_HOME=$(/usr/libexec/java_home -v 21.0.2)
 
   # Homebrew
   eval "$(/opt/homebrew/bin/brew shellenv)"
