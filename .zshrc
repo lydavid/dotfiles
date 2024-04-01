@@ -1,11 +1,3 @@
-# If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:/usr/local/bin:/usr/bin:$HOME/.local/bin:$PATH
-
-if [[ $(uname) == Darwin ]] && [[ $(uname -m) == arm64 ]]; then
-  # Make sure to use homebrew's ruby because of issues with system ruby on Apple silicon (according to kdoctor)
-  export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
-fi
-
 export GPG_TTY=$(tty)
 
 # Path to your oh-my-zsh installation.
