@@ -6,6 +6,7 @@ alias gla='git log --all'
 alias gco='git checkout'
 alias gaa='git add .'
 alias gcm='git commit -m'
+alias gca='git commit --amend'
 
 alias lah='eza -lah'
 alias ll='lah'
