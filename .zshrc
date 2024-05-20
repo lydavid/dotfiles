@@ -60,6 +60,7 @@ zstyle ':omz:update' frequency 13
 # or set a custom format using the strftime function format specifications,
 # see 'man strftime' for details.
 HIST_STAMPS="yyyy-mm-dd"
+setopt HIST_IGNORE_ALL_DUPS
 
 # Would you like to use another custom folder than $ZSH/custom?
 #ZSH_CUSTOM="$HOME/.oh-my-zsh-custom"
