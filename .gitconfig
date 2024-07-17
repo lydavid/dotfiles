@@ -16,3 +16,9 @@
         signingkey = 3E91D9F48ECE7814
 [commit]
         gpgsign = true
+[rerere]
+	enabled = true
+[push]
+	default = current
+[pull]
+	default = current
