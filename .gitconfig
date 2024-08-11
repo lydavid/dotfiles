@@ -1,6 +1,7 @@
 [core]
 	ignorecase = false
 	editor = vi
+	hooksPath = .githooks
 	untrackedcache = true
 	fsmonitor = true
 [filter "lfs"]
