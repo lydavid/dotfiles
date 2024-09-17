@@ -1,6 +1,7 @@
 alias gs='git status -sb'
 alias gd='git diff'
-alias gl='git log'
+alias gl="git log --graph --all --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(bold white)— %an%C(reset)' --abbrev-commit"
+alias glg='git log'
 alias gds='git diff --staged'
 alias gla='git log --all'
 alias gco='git checkout'
