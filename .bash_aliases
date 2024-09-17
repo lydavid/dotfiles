@@ -1,4 +1,4 @@
-alias gs='git status'
+alias gs='git status -sb'
 alias gd='git diff'
 alias gl='git log'
 alias gds='git diff --staged'
