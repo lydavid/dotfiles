@@ -23,7 +23,7 @@ if [[ $(uname) == Darwin ]]; then
   PATH+=:$ANDROID_HOME/emulator
 
   # Specify JDK in case there are multiple JDK installations
-  export JAVA_HOME=$(/usr/libexec/java_home -v 19)
+  export JAVA_HOME=$(/usr/libexec/java_home -v 21)
 
   # Homebrew
   eval "$(/opt/homebrew/bin/brew shellenv)"
