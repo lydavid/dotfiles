@@ -21,5 +21,6 @@
 	enabled = true
 [push]
 	default = current
+	autoSetupRemote = true
 [pull]
 	default = current
