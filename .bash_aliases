@@ -23,3 +23,7 @@ if [[ -n "$WSL_DISTRO_NAME" ]]; then
   # Makes git much faster in WSL, but we have to push/pull with /usr/bin/git
   alias git='git.exe'
 fi
+
+jq_structure() {
+    jq -r '[path(..)|map(if type=="number" then "[]" else tostring end)|join(".")|split(".[]")|join("[]")]|unique|map("."+.)|.[]' "$@"
+}
