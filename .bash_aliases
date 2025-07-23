@@ -24,6 +24,8 @@ if [[ -n "$WSL_DISTRO_NAME" ]]; then
   alias git='git.exe'
 fi
 
+# Does not handle special characters in property name
+# See https://github.com/jqlang/jq/issues/243#issuecomment-48470943 if I need this
 jq_structure() {
     jq -r '[path(..)|map(if type=="number" then "[]" else tostring end)|join(".")|split(".[]")|join("[]")]|unique|map("."+.)|.[]' "$@"
 }
