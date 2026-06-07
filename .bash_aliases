@@ -12,6 +12,8 @@ alias gr='git restore'
 alias grs='git restore --staged'
 alias grb='git rebase -i'
 alias gpr='git pull --rebase'
+alias gpl='git pull'
+alias gph='git push'
 
 alias lah='eza -lah'
 alias ll='lah'
