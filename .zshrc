@@ -113,3 +113,6 @@ fi
 
 eval "$(zoxide init zsh)"
 
+ssh-add --apple-load-keychain -q
+
+export FASTLANE_XCODEBUILD_SETTINGS_TIMEOUT=120
