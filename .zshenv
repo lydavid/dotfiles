@@ -15,6 +15,10 @@ if [[ -n "$WSL_DISTRO_NAME" ]]; then
   PATH+=:$ANDROID_HOME/emulator
 fi
 
+if [[ $(uname -o) == Android ]]; then
+  PATH+="$HOME/go/bin"
+fi
+
 if [[ $(uname) == Darwin ]]; then
 
   export ANDROID_HOME=~/Library/Android/sdk
