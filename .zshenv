@@ -16,7 +16,7 @@ if [[ -n "$WSL_DISTRO_NAME" ]]; then
 fi
 
 if [[ $(uname -o) == Android ]]; then
-  PATH+="$HOME/go/bin"
+  PATH+=":$HOME/go/bin"
 fi
 
 if [[ $(uname) == Darwin ]]; then
