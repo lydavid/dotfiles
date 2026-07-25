@@ -113,6 +113,8 @@ fi
 
 eval "$(zoxide init zsh)"
 
-ssh-add --apple-load-keychain -q
+if [[ $(uname) == Darwin ]]; then
+  ssh-add --apple-load-keychain -q
+fi
 
 export FASTLANE_XCODEBUILD_SETTINGS_TIMEOUT=120
