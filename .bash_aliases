@@ -1,3 +1,4 @@
+# git
 alias gf='git fetch'
 alias gs='git status -sb'
 alias gd='git diff'
@@ -15,12 +16,16 @@ alias grb='git rebase -i'
 alias gpr='git pull --rebase'
 alias gpl='git pull'
 alias gph='git push'
+alias gsw='git show'
 
+# ls, eza
 alias lah='eza -lah'
 alias ll='lah'
 
 alias cd='z'
 alias v='nvim'
+
+alias n='nnn -de'
 
 if [[ -n "$WSL_DISTRO_NAME" ]]; then
   # Makes git much faster in WSL, but we have to push/pull with /usr/bin/git
