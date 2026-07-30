@@ -25,7 +25,7 @@ alias ll='lah'
 alias cd='z'
 alias v='nvim'
 
-alias n='nnn -de'
+alias n='nnn -deH'
 
 if [[ -n "$WSL_DISTRO_NAME" ]]; then
   # Makes git much faster in WSL, but we have to push/pull with /usr/bin/git
