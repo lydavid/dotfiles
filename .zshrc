@@ -88,7 +88,11 @@ source $ZSH/oh-my-zsh.sh
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
-export EDITOR='nvim'
+if [[ $(uname -o) == Android ]]; then
+  export EDITOR='/data/data/com.termux/files/usr/bin/nvim'
+else
+  export EDITOR='nvim'
+fi
 # else
 #   export EDITOR='mvim'
 # fi
