@@ -21,6 +21,7 @@ alias gsw='git show'
 # ls, eza
 alias lah='eza -lah'
 alias ll='lah'
+alias l='lah'
 
 alias cd='z'
 alias v='nvim'
